@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    padding: 0 50px;
+}
+
+header {
+    background-color: #000000AA; /* Hexadecimal para trabalhar com a opacidade */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw; /* Também poderia ser feito por cada lado (padding-left e padding-right) */
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.links .menu {
+    display: flex;
+    gap: 20px; /* Dá um espaço entre os itens, separando-os */
+    list-style-type: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none; /* Tira o sublinhado */
+    font-size: 20px;
+    user-select: none; /* Impossibilita a seleção do texto */
+    transition: all .75s; /* É uma transição para mudar do branco para o vermelho mais delicadamente, de forma gradativa */
+}
+
+.links a:hover { /* Efeito ao passar o mouse */
+    color: red; /* Efeito de mudança de cor */
+}
+
+.capa {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/capa.webp");
+    background-color: #000000bd; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    background-position: right top; /* Fixa o lado direito superior da imagem conforme a redefinição de tamanho da página */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-align: justify;
+    padding: 80px;
+    gap: 50px;
+}
+
+.capa h1 {
+    display: flex;
+    justify-content: center;
+    color: rgba(160, 20, 20, 0.856);
+    font-size: 40px;
+}
+
+.capa h2 {
+    margin-top: 30px;
+    color: rgb(184, 84, 84);
+}
+
+.capa p {
+    margin-top: 20px;
+    font-size: 22px;
+    max-width: 1300px;
+}
+
+/* FPOO */
+.fpoo {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/fpoo.png");
+    background-color: #000000bb; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.87);
+    justify-content: center;
+    text-align: justify;
+    padding: 20px 50px;
+}
+
+.fpoo header {
+    background-color: #0000009f;
+    color: rgb(177, 72, 72);
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.item-fpoo-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.textos-fpoo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.textos-fpoo .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagem-fpoo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.imagem-fpoo img {
+    width: 392px;
+    height: 220px;
+}
+
+.fpoo h3 {
+    color: white;
+}
+
+/* LIMA */
+.lima {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/lima.jpg");
+    background-color: #000000d0; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.87);
+    justify-content: center;
+    text-align: justify;
+    padding: 20px 50px;
+}
+
+.lima header {
+    background-color: #000000d8;
+    color: rgb(177, 72, 72);
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.item-lima-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-lima-container .texto {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-lima-container .imagens {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.item-lima-container .imagens img {
+    width: 392px;
+    height: 220px;
+}
+
+.lima h3 {
+    color: white;
+}
+
+/* SOP */
+.sop {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/employee-3005501_960_720.jpg");
+    background-color: #000000ee; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+    justify-content: center;
+    text-align: justify;
+    padding: 20px 50px;
+}
+
+.sop header {
+    background-color: #0000009f;
+    color: rgb(177, 72, 72);
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.sop .texto1 {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.item-sop-container {
+    display: flex;
+    height: 80%;
+    gap: 25px;
+}
+
+.item-sop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -80px;
+}
+
+.item-sop p {
+    max-width: 392px;
+}
+
+.sop h3 {
+    color: white;
+}
+
+/* HARE */
+.hare {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/hareCapa.webp");
+    background-color: #000000d8; /* Hexadecimal para trabalhar com a opacidade */
+    background-blend-mode: darken; /* Mistura a cor do fundo (no caso preto) com a imagem, escurecendo-a */
+    background-size: cover; /* Amplia a imagem  o máximo possível sem distorcê-la */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.87);
+    justify-content: center;
+    text-align: justify;
+    padding: 20px 50px;
+}
+
+.hare header {
+    background-color: #0000009f;
+    color: rgb(177, 72, 72);
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.item-hare-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    gap: 20px;
+}
+
+.item-hare {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.item-hare:nth-child(2){
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.item-hare img {
+    width: 280px;
+    height: 157px;
+}
+
+.hare h3 {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000AA; /* Hexadecimal para trabalhar com a opacidade */
+    height: 25px;
+}
